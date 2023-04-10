@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+input {
+  caret-color: red;
+}
+
+.divAlign{
+  background: #f0f0f020;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+  overflow: hidden;
+  font-family: poppins;
+  padding-top: 20px;
+}
+
+.firstHalfDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 82vh;
+}
+
+.secondHalfDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 82vh;
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #0f1d19;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+
+.brand_logo {
+  height: 60px;
+  width: 60px;
+  color: #B68D40;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #212826a2, -7px -7px 10px rgb(73, 70, 70);
+}
+
+.brand_title {
+  margin-top: 5px;
+  font-weight: 900;
+  font-size: 1.4rem;
+  color: #B68D40;
+  letter-spacing: 1px;
+}
+
+.inputs {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.labelElement, .inputElement, .btnElement {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.labelElement {
+  margin-bottom: 4px;
+  color: #d6a140;
+}
+
+.labelElement:nth-of-type(2) {
+  margin-top: 12px;
+}
+
+.inputElement::placeholder {
+  color: gray;
+}
+
+.inputElement {
+  background: #0f1d19;
+  color: #fff;
+  padding: 10px;
+  padding-left: 20px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #424344, inset -6px -6px 6px #0f1d197a;
+}
+
+.btnElement {
+  color: #0f1d19;
+  margin-top: 20px;
+  background: #D6AD60;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 3px 3px 3px #42434494, -2px -2px 2px #d6ad609b;
+  transition: 0.5s;
+}
+
+.btnElement:hover {
+  box-shadow: none;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

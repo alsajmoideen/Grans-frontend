@@ -1,0 +1,91 @@
+.outerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 75.5vh;
+    margin-top: 20px;
+    box-sizing: content-box;
+    overflow: hidden;
+}
+
+.addItem{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.hTag{
+    text-align: center;
+}
+
+.divColumn{
+    display: flex;
+    flex-direction: column
+}
+
+.formElement{
+    width: 250px;
+    height: 400;
+}
+
+.labelElement, .inputElement, .btnElement, .textAreaElement{
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+  }
+
+  .labelElement {
+    margin-bottom: 4px;
+    color: #d6a140;
+  }
+  
+  .labelElement:nth-of-type(2) {
+    margin-top: 12px;
+  }
+  
+  .inputElement::placeholder {
+    color: gray;
+  }
+  
+  .inputElement {
+    background: #0f1d19;
+    color: #fff;
+    padding: 10px;
+    padding-left: 20px;
+    margin-top: 5px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #424344, inset -6px -6px 6px #0f1d197a;
+  }
+
+  .textAreaElement{
+    background: #0f1d19;
+    color: #fff;
+    padding: 10px;
+    padding-left: 20px;
+    margin-top: 5px;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: inset 6px 6px 6px #424344, inset -6px -6px 6px #0f1d197a;
+    resize: vertical;
+  }
+  
+  .btnElement {
+    color: #0f1d19;
+    margin-top: 20px;
+    background: #D6AD60;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 3px 3px 3px #42434494, -2px -2px 2px #d6ad6074;
+    transition: 0.5s;
+  }
+  
+  .btnElement:hover {
+    box-shadow: none;
+  }
