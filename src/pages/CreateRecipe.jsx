@@ -42,7 +42,7 @@ function CreateRecipe() {
   const onSubmit = async (e) => {
     e.preventDefault()
     try {
-      await axios.post("http://localhost:3001/recipes", recipe, {
+      await axios.post("https://grans-recipe-mern-api.onrender.com/recipes", recipe, {
         headers: { Authorization: cookie.accessToken }
       })
       alert("Recipe Created")

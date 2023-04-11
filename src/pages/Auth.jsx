@@ -31,7 +31,7 @@ function Login() {
     e.preventDefault()
 
     try {
-      await axios.post("http://localhost:3001/auth/login", {
+      await axios.post("https://grans-recipe-mern-api.onrender.com/auth/login", {
         username,
         password
       }).then(res => {
@@ -71,7 +71,7 @@ function Register() {
     e.preventDefault()
 
     try {
-      await axios.post("http://localhost:3001/auth/register", {
+      await axios.post("https://grans-recipe-mern-api.onrender.com/auth/register", {
         username,
         password
       }).then((res) => alert(res.data.message))

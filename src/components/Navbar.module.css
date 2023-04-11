@@ -71,15 +71,17 @@
 }
 
 @media only screen and (max-width: 580px) {
+
     .outer_navbar_div {
         height: 6rem;
+        width: 100%;
     }
 
     .navbar {
         display: flex;
         position: fixed;
-        top: 10px;
-        left: 14px;
+        top: 5px;
+        left: 5px;
         width: 97%;
         height: 5.4rem;
         background-color: #122620;
@@ -94,7 +96,7 @@
         position: fixed;
         flex-wrap: wrap;
         top: 10px;
-        left: 14px;
+        left: 5px;
         width: 97%;
         height: 5.4rem;
         background-color: #122620;

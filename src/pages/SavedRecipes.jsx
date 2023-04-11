@@ -15,7 +15,7 @@ function SavedRecipes() {
 
     const fetchSavedRecipe = async () => {
       try {
-        await axios.get(`http://localhost:3001/recipes/saverRecipes/${userID}`).then(res => {
+        await axios.get(`https://grans-recipe-mern-api.onrender.com/recipes/saverRecipes/${userID}`).then(res => {
           setSavedRecipes(res.data.savedRecipes)
           console.log(res.data)
         })

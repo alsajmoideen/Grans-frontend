@@ -16,20 +16,21 @@ function Home() {
   useEffect(() => {
     const fetchRecipe = async () => {
       try {
-        await axios.get("http://localhost:3001/recipes").then(res => {
+        await axios.get("https://grans-recipe-mern-api.onrender.com/recipes").then(res => {
           setRecipes(res.data)
-
+          console.log(process.env.API_SERVER_URL)
         })
 
       } catch (error) {
         console.log(error)
       }
     }
-
+    
     const fetchSavedRecipe = async () => {
       try {
-        await axios.get(`http://localhost:3001/recipes/saverRecipes/ids/${userID}`).then(res => {
+        await axios.get(`http://grans-recipe-mern-api.onrender.com/recipes/recipes/saverRecipes/ids/${userID}`).then(res => {
           setSavedRecipes(res.data.savedRecipes)
+          
         })
 
       } catch (error) {
@@ -43,7 +44,7 @@ function Home() {
 
   const saveRecipe = async (recipeID) => {
     try {
-      await axios.put("http://localhost:3001/recipes", {
+      await axios.put("https://grans-recipe-mern-api.onrender.com/recipes", {
         userID,
         recipeID
       }, {
@@ -72,7 +73,7 @@ function Home() {
 
                 {/* <!--title--> */}
                 <div className={style.title}>
-                  <p>{recipe.name}</p>
+                  <header>{recipe.name}</header>
                 </div>
 
                 {/* <!--details--> */}
